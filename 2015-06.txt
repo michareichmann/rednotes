@@ -1,0 +1,108 @@
+12: {text: '===ETH===
+
+
+    - measuring shape of the fastOR signal:
+
+
+    - no dependency for single plane or in telescope
+
+    - all single pixel fastORs look exactly identical independent of the position
+    of the pixel on the ROC
+
+    - the signal of two activated pixels in one column or one double column is identical
+    to one pix activated
+
+    - also a whole activated double column looks identical
+
+    - if whole single row is active fastOR still identical
+
+    - shape depends if consecutive double cols are hit (one is hit and the next isnt
+    and so on)
+
+    - used mask where only every second double col is activated --> changes shape
+    considerably
+
+    - adding the second pixel in the DC doesn''t change shape
+
+    - enabling all rows doesn''t chang it either
+
+    - neither putting in spaces in rows
+
+    - double puls starts showing for more than 65 activated rows
+
+    - saving pics for every second DC
+
+'}
+14:
+  Todo: {--create class for root stuff for keithleyreader--: null}
+  text: "=== HOME ===\n- refining keithleyreader\n - creating the classes RunInfo
+    and KeithleyInfo and putting all the information and functions inside them\n -
+    learnig about classes and inhertance in python\n  - inherit: def class name(dervied
+    class)\n  - def _init_(..) derivClass._init_(..)\n - adding lines for every run
+    longer than 20 min as TGaxis with opt \"SU\" for unlabeled and tick settings active\n
+    - improved speed by iterative search through the keithley log file\n - adding
+    option to see first and last run\n - adding option to show the runs when diamonds
+    where changed "
+15:
+  Todo: {reimburse Christian 6 CHF: null, set i2c automatically to 0 if not set in config file: null}
+  text: "===ETH===\n- arriving at 10.20 am\n- keithleyreader:\n - adding class functions
+    for elapsed time, print dia runs and print first and last run\n- analysing fastOR
+    signal\n- effect of vsumcal: \n\n[\"\"file:///home/testbeam/Pictures/tek00030\"\".png?300]\n\n
+    - rising edge on the left side and the height of the one cluster hit\n - for just
+    on pixel active: bump on the left side gets smaller and smaller and vanishes for
+    vsumcol > 63\n\n[\"\"file:///home/testbeam/Pictures/tek00031\"\".png?300]\n\n-
+    effect of vnpix:  \n - for vnpix > =114 signal goes down half in intensity\n -
+    for vnpix >= 123 signal goes down half again\n - for vnpix >= 127 it starts vanishing
+    completely\n- effect of vicolor: for vnpix = 100\n - vicolor<16 : signal off\n
+    - vicolor <19: same as vnpix >= 123\n - vicolor <33: same as vnpix >= 114\n\n[\"\"file:///home/testbeam/Pictures/tek00032\"\".png?300]\n\n==========================\n\n-
+    looking at behaviour of PH vs vcal"
+16: {text: "===ETH===\n\n- finishing keithleyreader\n - putting all the root stuff
+    in a single class that takes the Keithley class argument\n - creating all objects
+    in the _init_ and draw them later in a main loop\n - make them accessible all
+    the time\n - drawing pad titles and the box now in one single pad\n - using TPaveTexts
+    for the titles now to be able to use Latex\n  - including type of run in the plots\n
+    \ - one can use SetFillColor there even if it is not documented in ROOT\n  - use
+    all the setting from TAttText via SetAllWith(\"\", \"name\", value)\n- analysis
+    team meeting:\n - --> uploading all the current plots to rapidshare including
+    the multi run files for a diamond pair"}
+17: {text: '===ETH===
+
+
+    - arriving at 9.40 am
+
+    - adding notes from yersterday
+
+    - adding single Keithley mode for keithleyreader to look at any file independent
+    of the jsonfile
+
+    - adding time mode for usual keithley reader as well: now one can look at the
+    date from one time to another
+
+    - draw run axis even when enter time
+
+    - take right titles for time mode
+
+    - created all the full diamond plots and put them onto rapidshare'}
+18:
+  Todo: {Check if other levels are also inflicted if the ub is low: null, Check if supply voltage changes last ub: null}
+  text: "===ETH===\n\n- arriving at 9.30\n- checking behaviour of the current of the
+    S129: \n\n[\"\"file:///home/testbeam/Pictures/Screenshot from 2015-06-18 09:54:41\"\".png?300]\n[\"\"file:///home/testbeam/Pictures/Screenshot
+    from 2015-06-18 09:54:32\"\".png?300]\n\n- mounting data folder of rapidshare
+    on pim1\n - needed to do: sudo apt-get install nfs-common (nfs helper program)\n-
+    looking into TokenChainLenght ERROR:\n - cleaning datapipe.cc (saved old changes
+    for buggy software in [datapipe_fix.txt \"\"file:///home/testbeam/Documents/micha/datapipe_fix.txt\"\"])\n
+    - manipulating the CheckEventValidity to put out the raw data if the error appears\n
+    - writing a small the small tool [errorlog.py \"\"file:///home/testbeam/software/testing_stuff/errorlog.py\"\"]
+    to analysie these events and plot the hitmaps \n - error events have more than
+    49*6 words and are then cut off by the pXar or the last ub level is not found
+    because its too low\n - the low ub events may originate from insufficient supply
+    voltage for the telescope\n - fix low ub event by making the window bigger where
+    it looks for ub: ((ultrablack-levelS < expandSign((*word) & 0x0fff) && ultrablack+levelS''<font
+    color=\"red\">*2</font>'' > expandSign((*word) & 0x0fff))\n - having a look at
+    such events:  \n\n[\"\"file:///home/testbeam/Documents/micha/single_event_hitmap1\"\".png?600]\n\n-
+    changing the supply voltage of S129 to +200V and monitor the current\n- monitoring
+    the waveforms with the drs4 as well to check weather there is a dependency on
+    the current\n\n[\"\"file:///home/testbeam/Documents/micha/current 2015-06-19 13:18:20\"\".png?300]"
+19: {text: "===ETH===\n\n- arriving at 9.20\n- refining the errorlog.py \n - making
+    a pad for each ROC and put everything to a class\n - validating that the fix for
+    the low ub works\n"}

@@ -1,0 +1,124 @@
+2: {text: "===ETH===\n\n- day after May testbeam\n- arriving at 1.20 pm \n- cleaning
+    up lab and unpacking stuff from the car\n- adding ssh-key to rapidshare from snickers\n-
+    stopped pw query for rapidshare\n- looked at triggerlogic for new the testbeam
+    in August → get if from Felix --> [diamond_trigger_logic.pdf \"\"file:///home/micha/Downloads/diamond_trigger_logic.pdf\"\"]\n-
+    installed newest pXar on snickers\n- unable to install eudaq due to lack of sudo
+    rights and g++11 requirement\n\n"}
+3: {text: "===ETH===\n\n- arriving at 10.15\n- working on keithleyreader: [readKeithleyCurrent.py
+    \"\"file:///home/micha/documents/python/readkeithleycurrent/readKeithleyCurrent.py\"\"]\n-
+    playing around with ROOT:\n - tried to figure out how TPad works\n  - successfully
+    plotted two graphs in one pad with an axis on the the right side: see [padtest.py
+    \"\"file:///home/micha/documents/python/readkeithleycurrent/padtest.py\"\"]\n
+    - tried to increase the size of the Title in pyroot\n  - not yet done\n- installing
+    RedNotebook to make notes\n\n\n\n\n\n\n\n\n"}
+4:
+  Todo: {--add print run to run feature--: null, --check behavior of the analogue fastOR signals and make pictures ASAP--: null,
+    --copy keithley log files to rapidshare--: null, --learn how to use several files in python--: null}
+  text: "=== ETH ===\n\n- arriving at 9.30 am \n- checking weather the package from
+    PSI came: no delivery due to Corpus Christi\n- no clue when it might arrive\n-
+    leaving due to lack of chores\n\n=====================\n\n===HOME===\n\n- continue
+    working on keithleyreader:  \n  - used a third pad and a TText to add titles to
+    the canvas\n  - set the right frames s.t. everything is in the right space\n  -
+    changed the colorsettings\n  - adding possibility to save canvas as files\n  -
+    unable to zoom into files with several frames\n  - adding shell script to create
+    files for several runs: [convertToFile.sh \"\"file:///home/micha/documents/python/readkeithleycurrent/convertToFile.sh\"\"]\n
+    \n=======================\n"
+5: {text: "=== ETH ===\n\n- arriving at 10.00 am \n- package from PSI won't arrive
+    till Tuesday\n- working on keithleyreader:\n  - learned how to add files to python:
+    just save a new file with .py and import it in the main file\n  - put most of
+    the functions in  [functions.py \"\"file:///home/micha/documents/python/readkeithleycurrent/functions.py\"\"]\n
+    \ - adding feature to print from run to run\n  - adding nice borders to the pad\n
+    \ - changing colors\n  - putting the root stuff in [root_stuff.py \"\"file:///home/micha/documents/python/readkeithleycurrent/root_stuff.py\"\"]\n
+    \ - adding draw no canvas mode when saving\n- leaving Freitag, 05.06.2015 16:19:46\n"}
+8: {text: "===HOME===\n\n- package from PSI still not there --> staying at home\n-
+    improving keithleylogreader:\n - reworking the whole colour scheme s.t. everything
+    is yet white again (will be better for presentations)\n - the last added pad is
+    the one that is active and can be accessed --> putting the current pad on the
+    last position to make it possible to zoom once again\n - borders only work if
+    there is a single pad --> adding just another pad with a TBox to make a border\n
+    - was also adding a pad with the title only \n - adding option -f all to save
+    the root plot to .eps, .pdf and .root\n - .png is just very slow\n - fixing a
+    bug where the End of Run was missing in the log files: if this happens it will
+    take the start of the next run as stop now\n- improving the shell script that
+    loops over the keithleyreader\n - now checks if the file already exists\n - adding
+    possibility to loop over all runs\n- creating plots for all runs accessible and
+    putting them to /mnt/raid/psi*/currents_keithley on rapidshare\n- copying all
+    keithley log files to /mnt/raid/psi*/logs_keithley\n\n===========================\n\n-
+    new plots lookalike:\n\n[\"\"file:///home/micha/Pictures/example_plots\"\".png?400]\n\n=============================\n\n-
+    starting python script to read the eudaq logfiles:  [readLogs.py \"\"file:///home/micha/documents/python/readLogFiles/readLogs.py\"\"]\n-
+    making function file: [functions.py \"\"file:///home/micha/documents/python/readLogFiles/functions.py\"\"]\n
+    - extracting basic information (start, stop, etc...)\n"}
+9:
+  Todo: {'--eudaqLog: check for other names of diamond--': null, '--eudaqLog: check run info line--': null,
+    '--eudaqLog: json loader--': null, '--keitleylogger: add plot for whole diamond set--': null,
+    --plot relative current in keithleylogreader--: null, --put runnumber in plots--: null}
+  text: "=== ETH ===\n\n- arriving at 9.00 am\n- working on eudaq log reader\n - read
+    in all the information from the eudaq log files and write them to json\n\n- latest
+    version: [runs_PSI_May_2015.json \"\"file:///home/micha/documents/python/readLogFiles/runs_PSI_May_2015.json\"\"]"
+10: {text: "=== HOME ===\n\n- staying at home cause package from PSI will arrive on
+    Thursday\n- finishing eudaq log reader\n - adding persons on shift, run info,
+    improving details extracted from run info\n - reformating the programm\n"}
+12: {text: '===ETH===
+
+
+    - measuring shape of the fastOR signal:
+
+
+    - no dependency for single plane or in telescope
+
+    - all single pixel fastORs look exactly identical independent of the position
+    of the pixel on the ROC
+
+    - the signal of two activated pixels in one column or one double column is identical
+    to one pix activated
+
+    - also a whole activated double column looks identical
+
+    - if whole single row is active fastOR still identical
+
+    - shape depends if consecutive double cols are hit (one is hit and the next isnt
+    and so on)
+
+    - used mask where only every second double col is activated --> changes shape
+    considerably
+
+    - adding the second pixel in the DC doesn''t change shape
+
+    - enabling all rows doesn''t chang it either
+
+    - neither putting in spaces in rows
+
+    - double puls starts showing for more than 65 activated rows
+
+    - saving pics for every second DC
+
+'}
+14:
+  Todo: {create class for root stuff for keithleyreader: null}
+  text: "=== HOME ===\n- refining keithleyreader\n - creating the classes RunInfo
+    and KeithleyInfo and putting all the information and functions inside them\n -
+    learnig about classes and inhertance in python\n  - inherit: def class name(dervied
+    class)\n  - def _init_(..) derivClass._init_(..)\n - adding lines for every run
+    longer than 20 min as TGaxis with opt \"SU\" for unlabeled and tick settings active\n
+    - improved speed by iterative search through the keithley log file\n - adding
+    option to see first and last run\n - adding option to show the runs when diamonds
+    where changed"
+15:
+  Todo: {'**write summary about what i''ve done so far**': null, check why runs 400+ take so long to save pdf: null,
+    reimburse Christian 6 CHF: null, set i2c automatically to 0 if not set in config file: null}
+  text: "===ETH===\n- arriving at 10.20 am\n- keithleyreader:\n - adding class functions
+    for elapsed time, print dia runs and print first and last run\n- analysing fastOR
+    signal\n- effect of vsumcal: \n\n[\"\"file:///home/testbeam/Pictures/tek00030\"\".png?300]\n\n
+    - rising edge on the left side and the height of the one cluster hit\n - for just
+    on pixel active: bump on the left side gets smaller and smaller and vanishes for
+    vsumcol > 63\n\n[\"\"file:///home/testbeam/Pictures/tek00031\"\".png?300]\n\n-
+    effect of vnpix:  \n - for vnpix > =114 signal goes down half in intensity\n -
+    for vnpix >= 123 signal goes down half again\n - for vnpix >= 127 it starts vanishing
+    completely\n- effect of vicolor: for vnpix = 100\n - vicolor<16 : signal off\n
+    - vicolor <19: same as vnpix >= 123\n - vicolor <33: same as vnpix >= 114\n\n[\"\"file:///home/testbeam/Pictures/tek00032\"\".png?300]\n\n==========================\n\n-
+    looking at behaviour of PH vs vcal\n - confirmed that CLI and pxar now show exactly
+    the same\n - improved CLI version of the ph vs vcal scan\n- cleaning up myscript
+    and correcting some mistakes\n- fixed a bug in keithleyreader where it would jump
+    to an empty file or one that has no information at all\n- found keithleylogs until
+    the end\n- showed marc the last ones\n- fixed bug where axis wouldn't draw when
+    there is no current data"

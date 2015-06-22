@@ -152,11 +152,11 @@
 18:
   Todo: {Check if other levels are also inflicted if the ub is low: null, Check if supply voltage changes last ub: null}
   text: "===ETH===\n\n- arriving at 9.30\n- checking behaviour of the current of the
-    S129: \n\n[\"\"file:///home/testbeam/Pictures/Screenshot from 2015-06-18 09:54:41\"\".png?300]\n[\"\"file:///home/testbeam/Pictures/Screenshot
-    from 2015-06-18 09:54:32\"\".png?300]\n\n- mounting data folder of rapidshare
-    on pim1\n - needed to do: sudo apt-get install nfs-common (nfs helper program)\n-
-    looking into TokenChainLenght ERROR:\n - cleaning datapipe.cc (saved old changes
-    for buggy software in [datapipe_fix.txt \"\"file:///home/testbeam/Documents/micha/datapipe_fix.txt\"\"])\n
+    S129: \n\n[\"\"file:///home/micha/documents/micha/current 2015-06-18 09:54:41\"\".png?300]\n[\"\"file:///home/micha/documents/micha/current
+    2015-06-18 09:54:32\"\".png?300]\n\n- mounting data folder of rapidshare on pim1\n
+    - needed to do: sudo apt-get install nfs-common (nfs helper program)\n- looking
+    into TokenChainLenght ERROR:\n - cleaning datapipe.cc (saved old changes for buggy
+    software in [datapipe_fix.txt \"\"file:///home/testbeam/Documents/micha/datapipe_fix.txt\"\"])\n
     - manipulating the CheckEventValidity to put out the raw data if the error appears\n
     - writing a small the small tool [errorlog.py \"\"file:///home/testbeam/software/testing_stuff/errorlog.py\"\"]
     to analysie these events and plot the hitmaps \n - error events have more than
@@ -165,10 +165,22 @@
     voltage for the telescope\n - fix low ub event by making the window bigger where
     it looks for ub: ((ultrablack-levelS < expandSign((*word) & 0x0fff) && ultrablack+levelS''<font
     color=\"red\">*2</font>'' > expandSign((*word) & 0x0fff))\n - having a look at
-    such events:  \n\n[\"\"file:///home/testbeam/Documents/micha/single_event_hitmap1\"\".png?600]\n\n-
+    such events:  \n\n[\"\"file:///home/micha/documents/micha/single_event_hitmap1\"\".png?600]\n\n-
     changing the supply voltage of S129 to +200V and monitor the current\n- monitoring
     the waveforms with the drs4 as well to check weather there is a dependency on
-    the current\n\n[\"\"file:///home/testbeam/Documents/micha/current 2015-06-19 13:18:20\"\".png?300]"
+    the current\n\n[\"\"file:///home/micha/documents/micha/current 2015-06-19 13:18:20\"\".png?300]"
 19: {text: "===ETH===\n\n- arriving at 9.20\n- refining the errorlog.py \n - making
     a pad for each ROC and put everything to a class\n - validating that the fix for
-    the low ub works\n"}
+    the low ub works\n - preparing a small presentation to show the current plots
+    for the different diamonds: [Diamond Currents.pdf \"\"file:///home/micha/documents/micha/Diamond
+    Currents.pdf\"\"]\n- attending the hourlong rd4 meeting...\n- ramping the keithley
+    to 0 and back to 200 to make a long run over the weekend\n"}
+20: {text: '===HOME===
+
+
+    - creating repository to sync the notebooks on pim1 and at home
+
+    - checking keithley current:
+
+
+    [""file:///home/micha/documents/micha/current 2015-06-20 11:12:02"".png?500]'}

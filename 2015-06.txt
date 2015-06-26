@@ -184,3 +184,36 @@
 
 
     [""file:///home/micha/documents/micha/current 2015-06-20 11:12:02"".png?500]'}
+21: {text: '===HOME===
+
+
+    - making list of things I''ve done so far until PSI testbeam
+
+    - trying to connect to either pim1 or daq with remote desktop control to start
+    the keithley programme from home - without success'}
+22: {text: "===ETH=== \n\n- arrving at 9.10 am\n- creating a sh to chmod the usb devices
+    for the keithleyprogramms\n- starting remmina on ETH works fine...\n- fixing bugs
+    keithleyreader:\n - fixing problem with zero points at the input end time\n -
+    setting time offset to -3600 s.t. time is correct yet again\n - fixed bug where
+    the data was in the second last file and the programm would break to early\n -
+    fixed bug where there was no data during the start time and check empty would
+    execute too early\n- reformatting myscript\n- Gregor moving keithleyClient repo
+    and adding me to the new one\n- changing remote on daq and pushing the latest
+    commits\n- installing pyCharm on daq + JAVA\n\n"}
+23: {text: "===ETH===\n\n- arriving 9.10\n- setting up improved keithley client \n
+    - writing new udev rules for the cables to link them uniquely to the respective
+    voltage supply\n - writing new classes HV_Interface, keithley24XX with functions
+    from the previous ones\n - writing class HV_Device\n - trying to make the read
+    out of the keithley faster - no success it always takes roughly three second to
+    do one readout\n - stacking of multiple write does not do any good either"}
+24: {text: "===ETH===\n\n- arriving 9.20\n- still working on keithleyClient\n - adding
+    udev rules for brown keithley 237\n - adding logger for HV_device class that logs
+    for every thread and  makes a file for every Device\n - exiting cmd with ctrl
+    d"}
+25: {text: "===ETH===\n\n- arriving at 9.10 am\n- keithleyClient:\n - adding possibility
+    to send logs from CLI \n - improving logging by adding bias values when it starts
+    ramping and to which value it is ramping\n - removing ramp from main cmd loop
+    and made it less commands in the run from HV_device\n - proper renaming of the
+    files, functions and classes \n - adjusting measurements speed of the keithleys\n
+    - organising and improving the output \n - getting manual function to work for
+    the keithleys 24XX"}

@@ -8,7 +8,7 @@
     \"\"file:///home/micha/documents/python/readkeithleycurrent/readKeithleyCurrent.py\"\"]\n-
     playing around with ROOT:\n - tried to figure out how TPad works\n  - successfully
     plotted two graphs in one pad with an axis on the the right side: see [padtest.py
-    \"\"file:///home/micha/documents/python/readkeithleycurrent/padtest.py\"\"]\n
+    \"\"file:///home/micha/documents/python/readkeithleycurrent/testing/padtest.py\"\"]\n
     - tried to increase the size of the Title in pyroot\n  - not yet done\n- installing
     RedNotebook to make notes\n\n\n\n\n\n\n\n\n"}
 4:
@@ -104,18 +104,18 @@
     option to see first and last run\n - adding option to show the runs when diamonds
     where changed"
 15:
-  Todo: {'**write summary about what i''ve done so far**': null, check why runs 400+ take so long to save pdf: null,
+  Todo: {'**write summary about what i''ve done so far**': null, --check why runs 400+ take so long to save pdf--: null,
     reimburse Christian 6 CHF: null, set i2c automatically to 0 if not set in config file: null}
   text: "===ETH===\n- arriving at 10.20 am\n- keithleyreader:\n - adding class functions
     for elapsed time, print dia runs and print first and last run\n- analysing fastOR
-    signal\n- effect of vsumcal: \n\n[\"\"file:///home/testbeam/Pictures/tek00030\"\".png?300]\n\n
+    signal\n- effect of vsumcal: \n\n[\"\"file:///home/micha/documents/micha/tek00030\"\".png?300]\n\n
     - rising edge on the left side and the height of the one cluster hit\n - for just
     on pixel active: bump on the left side gets smaller and smaller and vanishes for
-    vsumcol > 63\n\n[\"\"file:///home/testbeam/Pictures/tek00031\"\".png?300]\n\n-
+    vsumcol > 63\n\n[\"\"file:///home/micha/documents/micha/tek00031\"\".png?300]\n\n-
     effect of vnpix:  \n - for vnpix > =114 signal goes down half in intensity\n -
     for vnpix >= 123 signal goes down half again\n - for vnpix >= 127 it starts vanishing
     completely\n- effect of vicolor: for vnpix = 100\n - vicolor<16 : signal off\n
-    - vicolor <19: same as vnpix >= 123\n - vicolor <33: same as vnpix >= 114\n\n[\"\"file:///home/testbeam/Pictures/tek00032\"\".png?300]\n\n==========================\n\n-
+    - vicolor <19: same as vnpix >= 123\n - vicolor <33: same as vnpix >= 114\n\n[\"\"file:///home/micha/documents/micha/tek00032\"\".png?300]\n\n==========================\n\n-
     looking at behaviour of PH vs vcal\n - confirmed that CLI and pxar now show exactly
     the same\n - improved CLI version of the ph vs vcal scan\n- cleaning up myscript
     and correcting some mistakes\n- fixed a bug in keithleyreader where it would jump
@@ -216,4 +216,30 @@
     and made it less commands in the run from HV_device\n - proper renaming of the
     files, functions and classes \n - adjusting measurements speed of the keithleys\n
     - organising and improving the output \n - getting manual function to work for
-    the keithleys 24XX"}
+    the keithleys 24XX\n - start writing the class for the 6517B\n  - cross checking
+    every function from 24XX  with the manual and adding the ones that exist for the
+    6517B as well\n\n===HOME===\n\n- continue 6517B\n - including read out functions
+    for the 6517"}
+26: {text: "===ETH===\n\n- arriving 8.45 am\n- Felix testing his [Keithley23X.py \"\"file:///home/micha/software/HVCient/Keithley23X.py\"\"]
+    class\n- continue working on the 6517B class \n - finish adding all the functions
+    from 24XX and putting in all the equivalent functions out of the manual\n - class
+    working in single instantiation\n- writing head class [KeithleyHead.py \"\"file:///home/micha/software/HVCient/KeithleyHead.py\"\"]
+    that includes the functions that are use from both 24XX and 6517B \n - 6517B always
+    prints current first and then voltage 24XX the other way around --> swap in read_iv\n
+    - bringing everything to function \n - still needs testing"}
+27: {text: '===HOME===
+
+
+    - looking into tracking from Gregor (see email)
+
+    - raw files need conversion to root first --> converter grom EUDAQ
+
+    - tracking softwore not working yet
+
+    - installing LaTeX and setting up kile as editor'}
+28: {text: '===HOME===
+
+
+    - finish setting up Kile
+
+    - writing master thesis progress with TeX'}

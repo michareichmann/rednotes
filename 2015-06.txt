@@ -217,3 +217,18 @@
     files, functions and classes \n - adjusting measurements speed of the keithleys\n
     - organising and improving the output \n - getting manual function to work for
     the keithleys 24XX"}
+29: {text: "===ETH===\n\n- arrving 9.15\n- setting up measurement with POLY-A and
+    the Keithley237\n- changing keithley current reader according to the new logfiles
+    and putting it in the function [functions1.py \"\"file:///home/testbeam/software/keithley_current/functions1.py\"\"]\n-
+    start working with the tracking software:\n - compile it with [Makefile_ubuntu
+    \"\"file:///home/testbeam/software/tracking/Makefile_ubuntu\"\"]\n - reading the
+    code in [TestPSIBinaryFileReader.cc \"\"file:///home/testbeam/software/tracking/bin/TestPSIBinaryFileReader.cc\"\"]\n
+    - trying to write own makefile to compile with root [makefile \"\"file:///home/testbeam/Documents/test/makefile\"\"]\n
+    - need the EUDAQ-DRS4 Converter with option -t drs4tree as source\n - write small
+    shell script to rename all empty runs\n - converting all runs to drs4trees\n -
+    then start with TestPSIBinaryFileReader <file> 0 7 \n - fixed writing new logfile
+    every day"}
+30: {text: "===ETH===\n\n- arriving at 8.50 am\n- finish converting every run to root
+    with drs4tree and move them on rapidshare\n- looking into the Tracking program:\n
+    - reorganising some functions\n - trying to understand what is done\n - fixing
+    some compiler warnings\n"}

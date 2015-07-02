@@ -1,0 +1,11 @@
+1: {text: "===ETH===\n\n- arriving 9.15 am\n- adding class [analysis.py \"\"file:///home/testbeam/software/keithley_current/analysis.py\"\"]
+    \ for keithleycurrent which makes histograms for the current\n- adding possibility
+    to do averaging for the current\n- reading through tracking program:\n - managed
+    to find and get the information from every single event\n - improving the concidence
+    Map by making it dependent on the number of planes and creating the bin names
+    by a loop instead of declaring them by hand...\n - setting the correct number
+    of bins and named the bins via TText loop"}
+2: {text: "===ETH=== \n\n- arrving at 8.25 am\n- tracking software:\n - understanding
+    the averagePH: one point every TimeWidth(20000 events) after that average set
+    to zero again\n - drawing the tracks: added that only if there is more than one
+    hit, a track is drawn\n - 17.50 shutting down air conditioner"}
